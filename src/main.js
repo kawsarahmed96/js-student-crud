@@ -71,10 +71,12 @@ const studentDataList = () => {
                       </td>
                     </tr>`;
     });
-  } else if(student.length <1){
-    studentList = `<tr>
-    <td colspan="7" class="text-center">Data not found !</td>
-  </tr>`;
+  } else {
+   
+        studentList = `<tr>
+       <td colspan="7" class="text-center">Data not found !</td>
+      </tr>`;
+  
   }
   studenDatatList.innerHTML = studentList;
 };
