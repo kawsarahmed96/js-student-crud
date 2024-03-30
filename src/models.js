@@ -23,5 +23,3 @@ const sendDataLs = (key,data)=>{
   newData.push(data)
   localStorage.setItem(key,JSON.stringify(newData))
 }
-
-

@@ -42,15 +42,16 @@
         </div>
       </div>
       <div class="modal fade" id="create-student">
-      <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h4>Create new student</h4>
-            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            <button type="button" class="btn-close create_btn" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">
             <div class="msg"></div>
             <form id="create_student_data">
+              
               <div class="my-3">
                 <input type="text" name="name" placeholder="Name" class="form-control">
               </div>
@@ -78,6 +79,54 @@
       </div>
     </div>
 
+
+<!-- update modal  -->
+
+
+<div class="modal fade" id="update-student">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4>Edit Student</h4>
+        <button type="button" class="btn-close update_btn" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="msg"></div>
+        <form id="update_student_data">
+          <div class="my-3">
+            <input type="hidden" name="inputid" placeholder="id" class="form-control">
+          </div>
+          <div class="my-3">
+            <input type="hidden" name="id" placeholder="id" class="form-control">
+          </div>
+          <div class="my-3">
+            <input type="text" name="name" placeholder="Name" class="form-control">
+          </div>
+          <div class="my-3">
+            <input type="email" name="email" placeholder="Email" class="form-control">
+          </div>
+
+          <div class="my-3">
+            <input type="text" name="phone" placeholder="Phone" class="form-control">
+          </div>
+          <div class="my-3">
+            <input type="text" name="location" placeholder="Location" class="form-control">
+          </div>
+          <div class="my-3">
+            <input type="text" name="photo" placeholder="Photo" class="form-control">
+          </div>
+
+          <div class="my-3">
+            <button type="submit" class="btn btn-primary">Create</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- update modal end  -->
     <div class="modal fade" id="show-student">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -94,8 +143,6 @@
     </div>
 
     
-    
-
     <!-- Script file bootstrap -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
    <!-- Main script file -->

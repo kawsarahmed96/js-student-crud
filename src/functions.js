@@ -30,7 +30,7 @@ const isEmail = (email)=>{
 
 const  isPhone = (phone)=>{
   const pattern = /^(\+8801|8801|01)[0-9]{9}$/;
-  return pattern.test(phone)
+    return pattern.test(phone)
 }
 
 function unique_id() {
